@@ -2,7 +2,7 @@ allprojects {
     repositories {
         google()
         jcenter()
-        maven { url "https://kotlin.bintray.com/kotlinx" }
+        maven { url "https://jitpack.io" }
     }
 }
 
@@ -27,6 +27,7 @@ compileJava {
 }
 
 dependencies {
+    implementation "com.github.protocolbuffers:protobuf:v$protobuf_version"
     implementation "com.google.protobuf:protobuf-javalite:$protobuf_version"
 }
 
